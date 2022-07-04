@@ -1,0 +1,27 @@
+<DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Jquery FadeOut</title>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	
+</head>
+<body>
+	<script type="text/javascript">
+
+		$(document).ready(function(){
+			$("button").click(function(){
+				$("#img").fadeOut();
+				$("#h1").fadeOut("slow");
+				$("#p").fadeOut(3000);
+
+			})
+		})
+	</script>
+	<h1 id="h1">Pulsar 220f  Black</h1>
+	<img src="220.png" width="50%" id ="img">
+	<p id="p">I have brought this bike in the year of 2018.</p>
+	<button>Click to FadeOut</button>
+</body>
+</html>

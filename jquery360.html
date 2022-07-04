@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Innoovatum Jquery</title>
+  <style type="text/css">
+    #demo {
+      margin-left: 500px;
+      margin-top: 250px;
+    }
+  </style>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+  <div id="demo">
+    
+<img src="220.png">
+<button>Rotate image</button>
+</div>
+    
+<script type="text/javascript">
+  var counterTmpAnimnNew = 0;
+  $("button").click(function(){
+    var element = $("img");
+    counterTmpAnimnNew = counterTmpAnimnNew + 90;
+    $({degrees: counterTmpAnimnNew - 90}).animate({degrees: counterTmpAnimnNew},{
+      duration:2000,
+      step:function(now){
+        element.css({
+          transform: 'rotate(' + now + 'deg)'
+        })
+      }
+
+
+    })
+  })
+
+</script>
+    
+</body>
+</html>
